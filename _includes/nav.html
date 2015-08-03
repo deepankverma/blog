@@ -1,0 +1,11 @@
+
+            <nav>
+                <ul class = "nav  {{include.navclass}}">     <!--so as to differentiate header and footer-->
+                    <li><a href="{{site.baseurl}}/" class="{% if page.url =='/index.html' %} current {% endif %}">Home</a></li>   <!-- class="current" was used but it only highlighted home even when anything else was selected.-->
+                    <li><a href="{{site.baseurl}}/Planets/">Planets</a></li>
+                    <li><a href="{{site.baseurl}}/News.html" class="{% if page.url =='/News.html' %} current {% endif %}">News</a></li>
+                    
+                </ul>
+                
+                
+            </nav>

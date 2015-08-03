@@ -2,4 +2,15 @@
 layout: default
 ---
 
-<h1> Now this is good</h1>
+<h1>NEWS</h1>
+<ul>
+    {% for News in site.posts %}
+    <li>
+        <a href="">{{News.title}}</a>
+        <p>{{News.meta}}</p>
+    </li>
+    {% endfor %}
+    
+    
+    
+</ul>
