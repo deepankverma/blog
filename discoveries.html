@@ -2,9 +2,9 @@
 layout: News
 ---
 
-<h1>NEWS</h1>
+<h1>DISCOVERIES</h1>
 <ul>
-    {% for News in site.categories.introspecting  limit :2 %}
+    {% for News in site.categories.discoveries  limit :3 %}
     <li>
         <a href="">{{News.title}}</a>
         <p>{{News.meta}}</p>
