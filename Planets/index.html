@@ -4,15 +4,12 @@ layout: default
 <h1> PLANETS </h1>
 
 <h2>DWARF</h2>
+{% include planet-list.html type='dwarf' %}  <!-- this will only print the dwarf planets since planet-list only has dwarf list, so using type='terrestrial etc will do-->
 
-<ul>
-    {% for planet in site.pages %}
-    {% if planet.type == 'dwarf' %}
-    <li>
-        {{planet.title}}
-    
-    </li>
-      {% endif %}
-    {% endfor %}
-    
-</ul>
+
+<h2>TERRESTRIAL</h2>
+{% include planet-list.html type='terrestrial' %}
+
+
+<h2>GAS-GIANTS</h2>
+{% include planet-list.html type='gas-giant' %}
