@@ -1,5 +1,5 @@
 ---
-layout: News
+layout: News-article
 title: The Third Post
 meta: This is the third post, my cycle gave up today and failed to moved a single yard.
 source: http://wikipedia.org

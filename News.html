@@ -6,7 +6,7 @@ layout: News
 <ul>
     {% for News in site.categories.introspecting  limit :2 %}
     <li>
-        <a href="">{{News.title}}</a>
+        <a href="{{site.baseurl}}{{News.url}}">{{News.title}}</a>
         <p>{{News.meta}}</p>
     </li>
     {% endfor %}
