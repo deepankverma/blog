@@ -1,5 +1,34 @@
 ---
 layout: default
 ---
-<h1>This is great</h1>
-<p>And awesome</p>
+<h1>Planets of the Universe</h1>
+<p>A planet is an astronomical object orbiting a star or stellar remnant</p>
+
+<h2>
+    Type of Planets
+    
+</h2>
+<ol>
+{% for planet1 in site.categories.planet-type %}
+
+    <li>
+        <a href=""></a>
+        {{planet1.title}}
+        
+        </li>
+    
+
+{{planet1.content}}
+{% endfor %}
+</ol>
+
+
+<h2> Recent Posts </h2>
+<ul>
+    {% for news in site.catagories.discoveries limit:2 %}
+    <li><a href="">{{news.title}}</a>
+    <p>{{news.meta}}</p>
+    </li>
+    {% endfor %}
+    
+</ul>
