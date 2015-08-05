@@ -13,6 +13,12 @@ html {
     
     list-style-type: none;
 }
+.masthead {
+    padding: 1em;
+    background: #005321 url("../img/nebula.jpg") no-repeat center center;
+    background-size: cover;
+    color:#fff;
+}
 
 .nav >li {
     display: inline-block;
